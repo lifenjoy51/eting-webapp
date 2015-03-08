@@ -319,6 +319,17 @@
 
 }
 
+.item-table{
+  display:table;
+  width:100%;
+}
+.item-row{
+  display:table-row;
+}
+.item-cell{
+  display:table-cell;
+}
+
 .storylist-body>.list-item{
   border-radius: 5px;
   background-color: white;
@@ -344,38 +355,30 @@
 }
 
 .storylist-body .content-area{
-  float:left;
-  padding-top:2vh;
-  padding-left:2vh;
-  width:80%;
+  padding-top:4px;
+  padding-left:10px;
   text-align:left;
 }
 
 .storylist-body .content-area>span{
-  float:left;
   color: #A0A0A0;
   font-size:8pt;
 }
 
 .storylist-body .content-area>p{
-  clear:left;
-  padding-top:0.5vh;
+  margin-top:5px;
+  margin-bottom:5px;
   color : #4C4C4C;
   font-size:10pt;
 }
 
 .storylist-body .read{
-  float:left;
   height:2.5vh;
 }
 
 .storylist-body .fav-area{
-  width:10%;
-  height:12vh;
-  line-height:12vh;
-  float:right;
   vertical-align:middle;
-  padding-right:2vh;
+  width:10%;
 }
 
 .storylist-body .fav{
