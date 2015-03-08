@@ -1,0 +1,129 @@
+
+<div class="swiper-container" style="height:100vh;">
+  <div class="bg-main parallax-bg"></div>
+
+  <div class="swiper-wrapper">
+
+    <!-- ########### -->
+    <!-- story list -->
+    <!-- ########### -->
+    <div class="swiper-slide" ng-controller="mainStoryListCtrl">
+
+      <div class="img-center storylist-area">
+
+        <div class="storylist-type">
+          <input id="type-story" type="radio" ng-model="itemtype" value="story"/>
+          <label class="type-story" for="type-story"></label>
+          <input id="type-reply" type="radio" ng-model="itemtype" value="reply"/>
+          <label class="type-reply" for="type-reply"></label>
+        </div>
+
+        <div class="storylist-topline"></div>
+
+        <div class="storylist-order">
+            <input id="order-time" type="radio" ng-model="ordertype" value="time"/>
+            <label class="order-time" for="order-time">시간순</label>
+            <input id="order-fav" type="radio" ng-model="ordertype" value="favorite"/>
+            <label class="order-fav" for="order-fav">즐겨찾기</label>
+        </div>
+
+        <div class="storylist-body">
+
+          <div class="list-item date-div">
+            <span>2014.04.</span>
+          </div>
+
+          <div class="list-item">
+            <div class="content-area">
+              <img class="read read-n" src="img/icon_storylist_reply_unread.png">
+              <span>2014.02.23</span>
+              <p>오늘서울하늘은맑음.내일도맑음. 아름다운강산. 우리뇌는어떻게생겼을까.</p>
+            </div>
+            <div class="fav-area">
+              <img class="fav fav-y" src="img/icon_storylist_favorite_on.png">
+            </div>
+          </div>
+
+
+          <div class="list-item">
+            <div class="content-area">
+              <img class="read read-n" src="img/icon_storylist_reply_read.png">
+              <span>2014.11.22</span>
+              <p>there are places i'll remember.</p>
+            </div>
+            <div class="fav-area">
+              <img class="fav fav-y" src="img/icon_storylist_favorite_off.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- #### -->
+    <!-- main -->
+    <!-- #### -->
+    <div class="swiper-slide">
+
+      <div class="img-center main-date">2015.03.06</div>
+
+      <div class="img-center main-count">275 eting</div>
+
+      <div class="img-center main-planet">
+        <img class="img-inside-div" src="img/main_planet.png">
+      </div>
+
+      <div class="img-center main-logo">
+        <img class="img-inside-div" src="img/eting_logo.png">
+      </div>
+
+      <div class="img-center main-spaceship">
+        <span class="img-center main-spaceship-count">3</span>
+        <img class="img-inside-div" src="img/spaceship.png">
+
+      </div>
+
+      <div class="img-center main-star">
+        <img class="img-inside-div" src="img/star05.png">
+      </div>
+
+      <div class="img-center main-mypage">
+        <img class="img-inside-div" src="img/btn_main_mypage.png">
+      </div>
+
+      <div class="img-center main-share">
+        <img class="img-inside-div" src="img/btn_main_share.png">
+      </div>
+
+      <div class="img-center main-setting">
+        <img class="img-inside-div" src="img/btn_main_setting.png">
+      </div>
+
+    </div>
+
+    <!-- ########### -->
+    <!-- story write -->
+    <!-- ########### -->
+    <div class="swiper-slide">
+
+      <div class="img-center storywrite-area">
+
+        <div class="storywrite-header">
+          <img class="img-inside-div" src="img/send_bg01.png">
+        </div>
+
+        <div class="storywrite-body">
+          <textarea class="send-content" placeholder="뭐든지 이야기해도 좋아 :)" ></textarea>
+        </div>
+
+        <div class="storywrite-footer">
+          <img class="img-center img-inside-div send-btn"
+          src="img/send_btn01.png" z-index="2">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

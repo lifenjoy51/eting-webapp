@@ -1,0 +1,383 @@
+/* app css stylesheet
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+*/
+
+/**********/
+/* common */
+/**********/
+/*이미지 가운데에 놓기.가운데로 맞추고 50%씩 조정한다.*/
+.img-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Safari */
+  transform: translate(-50%, -50%);
+}
+
+/* 꽉 채우고 가운데정렬한다. */
+.img-inside-div{
+  max-height:100%;
+  max-width:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-white{
+  background-color: #white;
+}
+
+.bg-main{
+  background-image:url("img/bg-blue.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+/*배경*/
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*********/
+/*splash */
+/*********/
+.splash-bg{
+  top: 35%;
+  height:30%;
+  width:height;
+}
+
+.splash-ufo{
+  top:35%;
+  height:12%;
+  width:height;
+}
+
+.splash-logo{
+  top: 60%;
+  height:10%;
+  width:height;
+}
+
+/********/
+/* main */
+/********/
+.main-date{
+  top: 7%;
+  text-align : center;
+  font-size : 4vh;
+  color : #FFFFFF;
+  font-weight : bold;
+}
+
+.main-count{
+  top: 13%;
+  text-align : center;
+  font-size : 3vh;
+  color : #FFFFFF;
+  font-weight : bold;
+
+
+}
+
+.main-planet{
+  top: 40%;
+  height:37vh;
+  width:37vh;
+
+}
+
+.main-logo{
+  top: 40%;
+  height:8%;
+  width:height;
+
+}
+
+.main-spaceship{
+  top: 20%;
+  left : 75%;
+  height:15vh;
+  width:15vh;
+
+}
+
+.main-spaceship-count{
+  font-size : 2vh;
+  color : #FFFFFF;
+  font-weight : bold;
+
+}
+
+.main-star{
+  top: 60%;
+  left : 75%;
+  height:4%;
+  width:height;
+
+}
+
+.main-mypage{
+  top: 90%;
+  left : 25%;
+  height:8%;
+  width:height;
+
+}
+
+.main-share{
+  top: 90%;
+  left : 50%;
+  height:8%;
+  width:height;
+
+}
+
+.main-setting{
+  top: 90%;
+  left : 75%;
+  height:8%;
+  width:height;
+}
+
+
+/***************/
+/* story-write */
+/***************/
+.storywrite-area{
+  width : 90vw;
+  height : 90vh;
+  text-align: center;
+}
+
+.storywrite-header > img{
+  height : 8vh;
+  width:100%;
+}
+
+.storywrite-body{
+  background-image:url("img/send_bg02.png");
+  background-size: 100%;
+  width:100%;
+
+  height:65vh;
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.storywrite-body > .send-content{
+  margin : 5vw;
+  width:80%;
+  height:95%;
+
+  border: none;
+  /* placeholder color */
+  ::-webkit-input-placeholder  { color:#555; } /* Webkit */
+  :-moz-placeholder { color:#555; }  /* Firefox <= 18 */
+  ::-moz-placeholder { color:#555; }  /* Firefox >= 19 */
+  :-ms-input-placeholder {  color: #555; } /* Internet Explorer */
+}
+
+.storywrite-footer{
+  background-image:url("img/send_bg03.png");
+  background-size: 100%;
+  height : 15vh;
+  width:100%;
+  position: relative;
+}
+
+.storywrite-footer > .send-btn{
+  width:80vw;
+}
+
+
+/**************/
+/* story list */
+/**************/
+.storylist-area{
+  width :95vw;
+  height : 100vh;
+  text-align: center;
+}
+/*모든 라디오 버튼을 숨긴다.*/
+.storylist-area input[type=radio] {
+  margin:0;padding:0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  display:none;
+}
+
+/*이야기,답글 구분버튼.*/
+.storylist-type label{
+  cursor:pointer;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  display:inline-block;
+  width:40%;
+  height:9vh;
+
+}
+.storylist-type input[type=radio] + label.type-story {
+  background-image:url("img/menu_storylist_story_off.png");
+}
+.storylist-type input[type=radio]:checked + label.type-story {
+  background-image:url("img/menu_storylist_story_on.png");
+}
+.storylist-type input[type=radio] + label.type-reply {
+  background-image:url("img/menu_storylist_reply_off.png");
+}
+.storylist-type input[type=radio]:checked + label.type-reply {
+  background-image:url("img/menu_storylist_reply_on.png");
+}
+
+/*그라데이션이 들어간 구분선.*/
+.storylist-topline{
+  height:8px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: -webkit-linear-gradient(rgba(30, 30, 30, 0.2), transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(30, 30, 30, 0.2), transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(30, 30, 30, 0.2), transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(30, 30, 30, 0.2), transparent); /* Standard syntax */
+}
+
+/*정렬버튼.*/
+.storylist-order label{
+  cursor:pointer;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  display:inline-block;
+  border: solid 3px;
+  border-color:rgb(193,193,193);
+  border-radius: 5px;
+  width:40vw;
+  height:3vh;
+  font-size:2vh;
+  font-stretch:bold;
+  margin-bottom:1vh;
+}
+.storylist-order label:nth-child(2){
+
+}
+.storylist-order label:nth-child(4){
+
+}
+
+.storylist-order input[type=radio] + label {
+  background-color:transparent;
+  color:#444444;
+}
+.storylist-order input[type=radio]:checked + label {
+  background-color:rgb(193,193,193);
+  color:#EEEEEE;
+}
+
+.storylist-body{
+
+}
+
+.storylist-body>.list-item{
+  border-radius: 5px;
+  background-color: white;
+  clear:left;
+  overflow:auto;
+  margin-bottom:2vh;
+
+  border-left: solid 10px;
+  border-color: #75b3d1;
+}
+
+.storylist-body>.date-div{
+  border-radius: 0px;
+  background-color: transparent;
+  height:auto;
+  border-color:#FFFFFF;
+  border-bottom:solid 2px;
+  text-align:left;
+  color:#FFFFFF;
+  font-size:8pt;
+
+  border-left: solid 0px;
+}
+
+.storylist-body .content-area{
+  float:left;
+  padding-top:2vh;
+  padding-left:2vh;
+  width:80%;
+  text-align:left;
+}
+
+.storylist-body .content-area>span{
+  float:left;
+  color: #A0A0A0;
+  font-size:8pt;
+}
+
+.storylist-body .content-area>p{
+  clear:left;
+  padding-top:0.5vh;
+  color : #4C4C4C;
+  font-size:10pt;
+}
+
+.storylist-body .read{
+  float:left;
+  height:2.5vh;
+}
+
+.storylist-body .fav-area{
+  width:10%;
+  height:12vh;
+  line-height:12vh;
+  float:right;
+  vertical-align:middle;
+  padding-right:2vh;
+}
+
+.storylist-body .fav{
+  height:6vh;
+}
