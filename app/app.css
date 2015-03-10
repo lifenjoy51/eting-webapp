@@ -76,6 +76,11 @@
   background-position: center;
 }
 
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 
 /*********/
 /*splash */
@@ -383,4 +388,86 @@
 
 .storylist-body .fav{
   height:6vh;
+}
+
+
+/*************/
+/* storyview */
+/*************/
+.storyview-area{
+  height:100vh;
+  width:90vw;
+}
+
+.storyview-header img{
+  height:10vh;
+}
+
+.storyview-body{
+}
+
+.storyview-body-story{
+  background-color:#FFFFFF;
+  margin : 0px 0px 20px 0px;
+  border-radius: 10px;
+}
+
+.storyview-body-story-topline{
+  height:20px;
+  background-color:#75b3d1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.storyview-body-story-content{
+  padding:20px;
+}
+
+.storyview-body-emoticon{
+  background-color:#FFFFFF;
+  margin : 20px 0px 0px 0px;
+  border-bottom: solid 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding:20px;
+  text-align:center;
+}
+
+.storyview-body-emoticon img{
+  margin : 0 20px;
+  height:10vh;
+}
+
+.storyview-body-reply{
+  background-color:#FFFFFF;
+  margin : 0px 0px 20px 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:20px;
+}
+
+/* ... 누르면 나오는 팝업창.*/
+.storyview-popup{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.storyview-popup-content{
+  background-color:#FFFFFF;
+  width:70%;
+  border-radius: 10px;
+}
+
+.storyview-popup-content p{
+  padding: 20px 20px 10px 20px;
+  margin:0;
+}
+
+.storyview-popup-content p:not(:last-child){
+  border-bottom: solid 1px;
 }
